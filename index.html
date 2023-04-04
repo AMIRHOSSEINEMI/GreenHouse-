@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="test.css">
+    <script src="https://kit.fontawesome.com/700f9cc419.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/png" href=""/>
+    <title>green house</title>
+    <style> 
+    body{
+        font-family: 'Josefin Sans';
+      
+    }
+    .drop ul{
+            list-style: none;
+            background-color: #ddedea;
+            font-family: 'lobster';
+        }
+        .drop ul li{
+            display: inline-block;
+            position: relative;
+        }
+        .drop ul li a{
+            display: block;
+            padding: 20px 15px;
+            color: black;
+            text-decoration: none;
+            text-align: center;
+            font-size: 15px;
+        }
+        .drop ul li ul.dropdown li{
+            display: block;
+            
+        }
+        .drop ul li ul.dropdown{
+            width: 100%;
+            background-color: #daeaf6;
+            position: absolute;
+            z-index: 999;
+            display: none;
+            padding: 10px;
+        }
+        .drop ul li a:hover{
+            background: #b5c2cc;
+        }
+        .drop ul li:hover ul.dropdown{
+            display: block;
+        }
+        .top{
+        background-image: url("ax/shakhe2.jpg");
+        background-color: #cccccc;
+        height: 400px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        padding: 15px;
+        }
+        .top2{
+            display: flex;
+            justify-content: space-around;
+            background-color: #fcf4dd;
+            width: 97%;
+            margin: auto;
+            border: 3px solid #f5eaca;
+            border-radius: 20px;
+            padding: 10px;
+            box-shadow: 2px 10px 10px #000;
+        }
+        @media only screen and (max-width: 1000px){
+        .top2{
+           display: flex;
+           flex-wrap: wrap;
+           flex-flow: column;   
+        }
+        
+        }
+        .top3{
+            display: flex;
+            justify-content: space-around;
+            margin: auto;
+            width: 97%;
+            background-color: #daeaf6;
+            box-shadow: 2px 10px 10px #000;
+            border-radius: 20px;
+            padding: 20px;
+        }
+         .shakh1{
+        animation-name: shake;
+        animation-duration: 5s;
+        animation-delay: 0s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        overflow: hidden;
+      }
+      @keyframes shake{
+   from{
+      transform: rotate(0deg) ;
+   }
+   to{
+    transform: rotate(20deg) ;
+   }
+}
+        .shakh2{
+        -moz-transform: scaleX(-1);
+        -o-transform: scaleX(-1);
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
+        animation-name: shake2;
+        animation-duration: 5s;
+        animation-delay: 0s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        overflow: hidden;
+      }
+      @keyframes shake2{
+   from{
+      transform: rotate(-160deg) ;
+   }
+   to{
+    transform: rotate(-140deg) ;
+   }
+}
+        @media only screen and (max-width: 1000px){
+        .top3{
+           display: flex;
+           flex-wrap: wrap;
+           flex-flow: column;   
+           margin: auto;
+           
+        }
+        .shakh1{
+            animation-duration: 0s;
+        }
+        .shakh2{
+            animation-duration: 0s;
+        }
+        .shakh1 img{
+            width: 100%;
+            height: auto;
+        }
+        .shakh2 img{
+            width: 100%;
+            height: auto;
+        }
+        .h1{
+            font-size: 3rem;
+        }
+
+    }
+
+    .top3 .kale{
+        margin-top: 10%;
+    }
+    .kart{
+        width: 97%;
+        margin: auto;
+        background-color: #ddedea;
+        box-shadow: 2px 10px 10px #000;
+        border-radius: 20px;
+        padding: 30px;
+    }
+    .card{
+        border: #000 1px solid;
+        border-radius: 20px;
+    }
+
+    .card img{
+        margin: 0px 0px 0px 0px;
+    }
+
+    .footer{
+        background-image: url("ax/greenhous.jpg");
+        background-color: #cccccc;
+        height: 550px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        width: 97%;
+        margin: auto;
+        border-radius: 30px;
+        display: flex;
+        justify-content: space-around;
+        padding: 30px;
+        font-weight: bold;
+    }
+    .form{
+        background: rgba(255, 255, 255, .7);
+        -webkit-backdrop-filter: blur(1px);
+        backdrop-filter: blur(1px);
+        padding: 30px;
+        height: fit-content;
+        border: #b5c2cc 2px solid;
+        border-radius: 20px;
+    }
+    .form input{
+        border-radius: 10px;
+    }
+    #log{
+        background-color: aquamarine;
+        border-radius:10px;
+    }
+    #sign{
+        background-color: aqua;
+        border-radius: 10px;
+    }
+    .topik1,.topik2,.topik3{
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      border: white 1px solid;
+      box-shadow: 2px 10px 10px #000;
+      border-radius: 20px;
+      width: 97%;
+      margin: 1% auto;
+    }
+    @media only screen and (max-width: 1000px){
+      .topik1,.topik2,.topik3{
+           display: flex;
+           flex-wrap: wrap;
+           flex-flow: column;   
+           margin: auto;
+           padding: 25px;
+           
+        }
+      }
+
+
+    </style>
+</head>
+<body>
+  <div class="drop">
+    <ul>
+      <li><a href="">Home</a></li>
+      <li>
+          <a href="">AmirHossein<i class="fas fa-angle-down"></i></a>
+          <ul class="dropdown">
+              <li><a href="">TREE</a></li>
+              <li><a href="">FLOWER</a></li>
+              <li><a href="">PLANT</a></li>
+              <li><a href="">FLOWER POT</a></li>
+          </ul>
+      </li>
+      <li><a href="">About Us</a></li>
+      <li><a href="">Contact Us <i class="fas fa-angle-down"></i></a> 
+          <ul class="dropdown">
+              <li><a href="">Telegram</a></li>
+              <li><a href="">Twitter</a></li>
+              <li><a href="">Instagram</a></li>
+          </ul>
+      </li>
+  </ul>
+  </div>
+  <div class="top">
+    <h1 style="text-align: center; font-size: 60px; margin-top: 3%;">The GreenHouse Of Love</h1>
+  </div>
+  <br><br><br>
+  <h1 style="text-align: center;">Lorem ipsum dolor sit amet. Lorem, ipsum dolor.</h1><br><br><br><br>
+  <div class="top2"> 
+    <img src="ax/gol.png" alt="">
+    <div class="matn">
+        <h2>Lorem ipsum dolor sit?</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis quia sunt expedita enim architecto ut magni est esse. Ut molestiae asperiores iste, quibusdam cum veritatis reiciendis dolores praesentium magni sunt consequuntur nihil facilis iusto delectus eum similique, saepe ex blanditiis!</p>
+        <h2>Lorem ipsum dolor sit amet?</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda, aspernatur? Sapiente molestias doloremque laudantium veritatis quisquam beatae laboriosam dignissimos! Aliquam optio dolorem suscipit illum, pariatur a modi incidunt assumenda voluptas.</p>
+        <h2>Lorem ipsum dolor sit.</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam minima deleniti voluptatum, recusandae ut rerum ullam quos temporibus consequatur dolore nisi. Quia reprehenderit reiciendis fugit cumque. Facere odit et nesciunt distinctio eveniet, saepe in deleniti!</p>
+    </div>
+</div>
+<br><br>
+<div class="top3">
+    <div class="shakh1"><img src="ax/gilas.png" alt=""></div>
+    <div class="kale" style="text-align: center;"><h1>SHOP</h1></div>
+    <div class="shakh2"><img src="ax/gilas.png" alt=""></div>
+</div>
+<br><br><br>
+<h1 style="text-align: center;">For Home</h1>
+<div class="kart">
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4">
+      <div class="card ">
+        <img src="ax/goldan3.jpg" alt="" class="card-img-top">
+        <div class="card-body">
+          <h2>test</h2>
+          <p class="card-text">1000$</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="ax/goldan2.jpg" alt="" class="card-img-top">
+        <div class="card-body">
+          <h2>test</h2>
+          <p class="card-text">1000$</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="ax/goldan.jpg" alt="" class="card-img-top">
+        <div class="card-body">
+          <h2>test</h2>
+          <p class="card-text">1000$</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="ax/goldan4.jfif" alt="" class="card-img-top">
+        <div class="card-body">
+          <h2>test</h2>
+          <p class="card-text">1000$</p>
+        </div>
+      </div>
+  </div>
+  </div>
+  <br><br>
+  <h1 style="text-align: center;">For Office</h1>
+  <div class="kart">
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4">
+      <div class="card ">
+        <img src="ax/tree.jpg" alt="" class="card-img-top">
+        <div class="card-body">
+          <h2>test</h2>
+          <p class="card-text">1000$</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="ax/tree2.jfif" alt="" class="card-img-top">
+        <div class="card-body">
+          <h2>test</h2>
+          <p class="card-text">1000$</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="ax/tree3.jfif" alt="" class="card-img-top">
+        <div class="card-body">
+          <h2>test</h2>
+          <p class="card-text">1000$</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="ax/tree4.jpg" alt="" class="card-img-top">
+        <div class="card-body">
+          <h2>test</h2>
+          <p class="card-text">1000$</p>
+        </div>
+      </div>
+  </div>
+  </div>
+  <br><br><br>
+  <div class="midle">
+    <div class="topik1">
+      <img src="ax/plant.png" alt="">
+      <div>
+        <h1>Lorem, ipsum dolor.</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque quo dolores impedit dolor corporis? Accusamus?</p>
+      </div>
+    </div>
+    <div class="topik2">
+      <div>
+        <h1>Lorem, ipsum dolor.</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque quo dolores impedit dolor corporis? Accusamus?</p>
+      </div>
+      <img src="ax/plant2.png" alt="">
+    </div>
+    <div class="topik3">
+      <img src="ax/plant3.png" alt="">
+      <div>
+        <h1>Lorem, ipsum dolor.</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque quo dolores impedit dolor corporis? Accusamus?</p>
+      </div>
+    </div>
+
+  </div>
+  <br><br><br>
+
+  <div class="footer">
+    <div id="matn">
+            <h1>Lorem ipsum dolor sit amet consectetur.</h1>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit facilis et praesentium earum dolores nulla!</p>
+    </div>
+    <div class="form">
+        <input type="text" placeholder="NAME">
+        <br><br>
+        <input type="text" placeholder="EMAIL">
+        <br><br>
+        <button id="sign">Sign</button><button id="log">Log</button>
+    </div>
+  </div>
+  <br><br><br>
+
+  <footer>
+
+  </footer>
+
+
+
+
+
+ 
+ 
+
+
+</body>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="test.js"></script>
+<script> 
+</script>   
+</body>
+</html>
